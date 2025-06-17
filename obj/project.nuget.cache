@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pLALhEZqsXo=",
+  "success": true,
+  "projectFilePath": "C:\\Projetos_C#\\GerenciamentoDePedidos\\GerenciamentoDePedidos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1-preview.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1-preview.1.nupkg.sha512"
+  ],
+  "logs": []
+}
