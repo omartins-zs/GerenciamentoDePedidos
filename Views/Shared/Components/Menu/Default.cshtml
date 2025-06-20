@@ -1,0 +1,38 @@
+﻿@model GerenciamentoDePedidos.Domain.Models.Usuario
+
+<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom mb-3">
+    <div class="container">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            @if (Model == null)
+            {
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" asp-controller="Auth" asp-action="Login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Auth" asp-action="Registro">Registrar</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto"></ul>
+            }
+            else
+            {
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <span class="navbar-text">Olá, @Model.Nome</span>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Cliente" asp-action="Index">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Produto" asp-action="Index">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Pedido" asp-action="Index">Pedidos</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-danger" asp-controller="Auth" asp-action="Logout">Logout</a>
+                    </li>
+                </ul>
+            }
+
+        </div>
+    </div>
+</nav>
