@@ -1,0 +1,39 @@
+﻿@model GerenciamentoDePedidos.Domain.Models.Pedido
+<form method="post">
+    <div class="form-group">
+        <label>Cliente</label>
+        <select asp-for="ClienteId" class="form-control" asp-items="@(new SelectList(ViewBag.Clientes, "Id", "Nome"))"></select>
+    </div>
+    <div id="items">
+        <div class="form-row mb-2">
+            <div class="col">
+                <select name="Itens[0].ProdutoId" class="form-control">
+                    @foreach (var pr in ViewBag.Produtos)
+                    {
+                        <option value="@pr.Id">@pr.Nome</option>
+                    }
+                </select>
+            </div>
+            <div class="col">
+                <input name="Itens[0].Quantidade" type="number" value="1" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <button id="addItem" class="btn btn-secondary mb-3">Adicionar Item</button>
+    <button class="btn btn-primary">Salvar Pedido</button>
+</form>
+@section Scripts {
+    <script>
+        $(function(){
+            let idx = 1;
+            $('#addItem').click(e => {
+                e.preventDefault();
+                var row = $('.form-row').first().clone();
+                row.find('select').attr('name', `Itens[${idx}].ProdutoId`);
+                row.find('input').attr('name', `Itens[${idx}].Quantidade`).val(1);
+                $('#items').append(row);
+                idx++;
+            });
+        });
+    </script>
+}

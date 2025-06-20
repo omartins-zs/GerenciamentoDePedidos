@@ -1,0 +1,34 @@
+﻿@model IEnumerable<GerenciamentoDePedidos.Domain.Models.Pedido>
+<form method="get" class="form-inline mb-3">
+    <select name="clienteId" class="form-control mr-2">
+        <option value="">Todos</option>
+        @foreach (var c in ViewBag.Clientes as IEnumerable<GerenciamentoDePedidos.Domain.Models.Cliente>)
+        {
+            <option value="@c.Id">@c.Nome</option>
+        }
+    </select>
+    <select name="status" class="form-control mr-2">
+        <option value="">Todos</option>
+        <option> Novo </option>
+        <option> Processando </option>
+        <option> Finalizado </option>
+    </select>
+    <button class="btn btn-primary">Filtrar</button>
+</form>
+<table class="table">
+    <thead><tr><th>Pedido</th><th>ClienteId</th><th>Data</th><th>Valor</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.ClienteId</td>
+                <td>@p.DataPedido.ToShortDateString()</td>
+                <td>@p.ValorTotal.ToString("C")</td>
+                <td>@p.Status</td>
+                <td><a asp-action="Details" asp-route-id="@p.Id" class="btn btn-sm btn-info">Detalhes</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="Create" class="btn btn-success">Novo Pedido</a>

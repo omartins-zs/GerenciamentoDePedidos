@@ -1,0 +1,15 @@
+﻿@model GerenciamentoDePedidos.Domain.Models.Pedido
+<h3>Pedido @Model.Id</h3>
+<table class="table">
+    <thead><tr><th>ProdutoId</th><th>Quantidade</th><th>Preço Unit.</th></tr></thead>
+    <tbody>
+        @foreach (var it in Model.Itens)
+        {
+            <tr>
+                <td>@it.ProdutoId</td>
+                <td>@it.Quantidade</td>
+                <td>@String.Format("{0:C}", it.PrecoUnitario)</td>
+            </tr>
+        }
+    </tbody>
+</table>
