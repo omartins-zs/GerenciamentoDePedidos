@@ -1,10 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "pLALhEZqsXo=",
+  "dgSpecHash": "ZEguKETmkN4=",
   "success": true,
   "projectFilePath": "C:\\Projetos_C#\\GerenciamentoDePedidos\\GerenciamentoDePedidos.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1-preview.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1-preview.1.nupkg.sha512"
+    "C:\\Users\\gabri\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\dapper.sqlbuilder\\2.1.66\\dapper.sqlbuilder.2.1.66.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\jsonconverter.abstractions\\0.7.2\\jsonconverter.abstractions.0.7.2.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\jsonconverter.newtonsoft.json\\0.7.2\\jsonconverter.newtonsoft.json.0.7.2.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1-preview.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1-preview.1.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\stef.validation\\0.1.1\\stef.validation.0.1.1.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
   ],
   "logs": []
 }
